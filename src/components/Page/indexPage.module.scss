@@ -7,15 +7,31 @@
     box-sizing: border-box;
 }
 * { box-sizing: border-box }
-
+%font-stack-Arial{
+  font-family:'Arial', sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0em;
+}  
+%font-stack-Open_Sans{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  line-height: 19px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0em;
+} 
+%font-stack-Roboto{
+  font-family: 'Roboto';
+  font-size: 14px;
+  line-height: 16px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0em;
+}
 body {
   margin: 0;
-  font-family:  'PT Sans', 'Open Sans',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-size: 21px;
-  line-height: 32px;
+  @extend %font-stack-Arial;
   background-color: white;
 }
 
@@ -43,26 +59,40 @@ li{
     width: 100%;
     background-color: white;
 }
-
+%button{
+  height: 40px;
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-weight: 700;
+}
+%button:hover{
+  box-shadow: 0 0 10px rgba(0,0,0,0.2); 
+}
+%button:active{
+  background-color: #e0b03f;
+  box-shadow: 0 0 20px rgba(0,0,0,0.2); 
+}
 .button__prime{
-    width: 90%;
-    color: white;
-    background-color: #3c92bd;
-    height: 30px;
-    border-radius: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
+  @extend %button;
+    width: 100%;
+    background-color: #F1BD45;
   }
-  .button__prime:hover{
-    box-shadow: 0 0 10px rgba(0,0,0,0.2); /* Параметры тени */
+  .button__secondary{
+    @extend %button;
+      width: 117px;
+      border: 1px solid #DEDEDE;
+      background-color: inherit;
+      margin-left: 11px;
+    }
+  button:active, button:focus {
+    outline: none !important;
   }
-  .button__prime:active{
-    background-color: #30799e;
-    box-shadow: 0 0 20px rgba(0,0,0,0.2); /* Параметры тени */
+  button::-moz-focus-inner {
+    border: 0 !important;
   }
-  @media (max-width: 1201px){
-    .container{
-        width: 90%;}
+  button{
+    border: none;
   }
