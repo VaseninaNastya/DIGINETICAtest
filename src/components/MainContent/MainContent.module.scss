@@ -1,0 +1,19 @@
+.content_container{
+  display: flex;
+  justify-content: space-between;
+}
+.mainContent_container{
+  width: 867px;
+  display: flex;
+  flex-direction: column;
+}
+.cardProducts_list{
+  display: flex;
+  flex-direction: column;
+}
+.cardProducts_list_row{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 40px;
+}

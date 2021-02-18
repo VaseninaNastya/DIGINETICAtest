@@ -5,7 +5,7 @@
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    font-weight: 700;
+    font-weight: bold;
   }
   %button:hover{
     box-shadow: 0 0 10px rgba(0,0,0,0.2); 
@@ -13,6 +13,9 @@
   %button:active{
     background-color: #e0b03f;
     box-shadow: 0 0 20px rgba(0,0,0,0.2); 
+  }
+  %button_unchosen{
+    background-color: #FFF3D8;
   }
   %font-stack-Arial{
     font-family:'Arial', sans-serif;
@@ -41,6 +44,6 @@
     font-weight: 400;
     letter-spacing: 0em;
   }
-  %container_inner{
+  %container__inner{
     padding: 0 40px;
   }

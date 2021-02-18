@@ -1,6 +1,6 @@
 @import "../extends.scss";
 .resultsHeader_title_container{
-    @extend %container_inner;
+    @extend %container__inner;
     margin-top: 5px;
     display: flex;
     align-items: center;
@@ -12,7 +12,7 @@
 
 }
 .resultsHeader_results_container{
-    @extend %container_inner;
+    @extend %container__inner;
     @extend %font-stack-Open_Sans;
     height: 110px;
     display: flex;

@@ -45,12 +45,16 @@ font-weight: normal;
 }
 
 .button__prime{
+  @extend %font-stack-Roboto;
   @extend %button;
+  font-weight: bold;
     width: 100%;
     background-color: #F1BD45;
   }
   .button__secondary{
+    @extend %font-stack-Roboto;
     @extend %button;
+    font-weight: bold;
       width: 117px;
       border: 1px solid #DEDEDE;
       background-color: inherit;
@@ -65,3 +69,7 @@ font-weight: normal;
   button{
     border: none;
   }
+
+.content_container{
+  @extend %container__inner
+}
