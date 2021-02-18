@@ -1,0 +1,22 @@
+@import "../extends.scss";
+.resultsHeader_title_container{
+    @extend %container_inner;
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    .resultsHeader_description{
+        @extend %font-stack-Open_Sans;
+        margin-left: 37px;
+        color: #8B8B8B;
+    }
+
+}
+.resultsHeader_results_container{
+    @extend %container_inner;
+    @extend %font-stack-Open_Sans;
+    height: 110px;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    overflow: hidden;
+}

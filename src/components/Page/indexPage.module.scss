@@ -1,4 +1,4 @@
-  
+@import "../extends.scss";
 *,
 *:before,
 *:after {
@@ -7,28 +7,7 @@
     box-sizing: border-box;
 }
 * { box-sizing: border-box }
-%font-stack-Arial{
-  font-family:'Arial', sans-serif;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0em;
-}  
-%font-stack-Open_Sans{
-  font-family: 'Open Sans', sans-serif;
-  font-size: 14px;
-  line-height: 19px;
-  font-style: normal;
-  font-weight: 400;
-  letter-spacing: 0em;
-} 
-%font-stack-Roboto{
-  font-family: 'Roboto';
-  font-size: 14px;
-  line-height: 16px;
-  font-style: normal;
-  font-weight: 400;
-  letter-spacing: 0em;
-}
+
 body {
   margin: 0;
   @extend %font-stack-Arial;
@@ -50,31 +29,21 @@ cursor: pointer;
 li{
   list-style: none;
 }
-
+h1{
+font-size: 28px;
+line-height: 32px;
+letter-spacing: 0em;
+font-weight: normal;
+}
 .container{
     width: 1280px;
-    margin: 0 auto;
+    /*margin: 0 auto;*/
 }
 .wrapper{
     width: 100%;
     background-color: white;
 }
-%button{
-  height: 40px;
-  border-radius: 3px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  font-weight: 700;
-}
-%button:hover{
-  box-shadow: 0 0 10px rgba(0,0,0,0.2); 
-}
-%button:active{
-  background-color: #e0b03f;
-  box-shadow: 0 0 20px rgba(0,0,0,0.2); 
-}
+
 .button__prime{
   @extend %button;
     width: 100%;
