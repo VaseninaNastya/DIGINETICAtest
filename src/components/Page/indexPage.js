@@ -19,13 +19,11 @@ class StartPage {
       resultsHeader.generateLayout(),
       create("div", "content_container", [
         aside.generateLayout(),
-        mainContent.generateLayout()
+        mainContent.generateLayout(),
       ]),
     ]);
     const wrapper = create("div", "wrapper", container);
     document.body.prepend(wrapper);
-    //multirange();
   }
-
 }
 export default StartPage;

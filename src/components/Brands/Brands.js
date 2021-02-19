@@ -43,9 +43,7 @@ class Brands {
         e.target.classList.toggle("checkbox_castome__checked");
       }
       if (Array.from(e.target.classList).includes("brands_uncheck")) {
-        //console.log("kdkdkd",Array.from(document.querySelectorAll('checkbox_castome')));
         Array.from(document.querySelectorAll('.checkbox_castome')).forEach((item)=>{
-          
           item.classList.remove("checkbox_castome__checked")
         })
       }
