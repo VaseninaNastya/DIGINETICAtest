@@ -6,6 +6,8 @@
   justify-content: space-between;
 }
 .brands_uncheck{
+  @extend %font-stack-Arial;
+  font-weight: normal;
   font-size: 10px;
   line-height: 11px;
   text-decoration-line: underline;

@@ -2,7 +2,7 @@ import "./Search.module.scss";
 import create from "../../utils/create.utils.js";
 class Search {
   generateLayout() {
-    const search_input = create("input", "search_input");
+    const search_input = create("input", "search_input", null, null, ['placeholder', "Запрос пользователя"]);
     const search_button__prime = create("button", "button__prime", "Найти");
     const search_button__secondary = create(
       "button",
