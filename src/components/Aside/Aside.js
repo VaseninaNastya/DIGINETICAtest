@@ -1,10 +1,12 @@
 import "./Aside.module.scss";
 import create from "../../utils/create.utils.js";
 import Price from "../Price/Price.js";
+import Brands from '../Brands/Brands.js'
 class Aside {
   generateLayout() {
     const categoryList = create("ul", "categoryList");
     const price = new Price();
+    const brands = new Brands()
     const categoryList_container = create(
       "div",
       "aside_categoryList_container",
@@ -29,6 +31,7 @@ class Aside {
     return create("div", "aside_container", [
       categoryList_container,
       price.generateLayout(),
+      brands.generateLayout(),
     ]);
   }
 
