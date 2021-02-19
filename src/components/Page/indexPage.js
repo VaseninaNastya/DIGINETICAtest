@@ -5,7 +5,7 @@ import Search from "../Search/Search.js";
 import ResultsHeader from "../ResultsHeader/ResultsHeader.js";
 import Aside from "../Aside/Aside.js";
 import MainContent from "../MainContent/MainContent.js";
-import multirange from "../../lib/multirange.js";
+//import multirange from "../../lib/multirange1.js";
 class StartPage {
   generateLayout() {
     const header = new Header();
@@ -24,7 +24,7 @@ class StartPage {
     ]);
     const wrapper = create("div", "wrapper", container);
     document.body.prepend(wrapper);
-    multirange();
+    //multirange();
   }
 
 }

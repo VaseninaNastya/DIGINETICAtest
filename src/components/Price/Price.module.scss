@@ -10,9 +10,14 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: 7px;
 }
 .price_container {
   margin-top: 32px;
+  height: 107px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .price_title {
   font-weight: bold;

@@ -14,8 +14,8 @@ class Aside {
       ]
     );
     const categoryList_item = create("li", "categoryList_item", [
-      "Категория в которой нашли что-то ",
-      create("span", "categoryList_item_description", "(ххх)"),
+      create('a',null,[      "Категория в которой нашли что-то ",
+      create("span", "categoryList_item_description", "(ххх)"),])
     ]);
     for (let i = 0; i < 8; i++) {
       categoryList.append(categoryList_item.cloneNode(true));
@@ -23,7 +23,7 @@ class Aside {
     const categoryList_item__showOther = create(
       "li",
       "categoryList_item categoryList_item__showOther",
-      "Ещё 10 категорий..."
+      create("a",null,      "Ещё 10 категорий...")
     );
     categoryList.append(categoryList_item__showOther);
     return create("div", "aside_container", [
