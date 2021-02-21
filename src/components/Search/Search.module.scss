@@ -22,6 +22,29 @@
 .search_input::placeholder {
   @extend %font-stack-Arial;
   padding-left: 10px;
-  border-left: 1px  #C4C4C4 solid;
+  border-left: 1px #c4c4c4 solid;
 }
 
+@media (max-width: 950px) {
+  .search_input {
+    width: 50%;
+  }
+  .search_container .button__prime,
+  .search_container .button__secondary {
+    width: 80px;
+  }
+  .search_container .button__prime {
+    margin: 0;
+  }
+}
+@media (max-width: 650px) {
+  .search_container .button__secondary {
+    display: none;
+  }
+  .search_input {
+    width: 80%;
+  }
+  .search_container{
+    padding: 10px;
+  }
+}

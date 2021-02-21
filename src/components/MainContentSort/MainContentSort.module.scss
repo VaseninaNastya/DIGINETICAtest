@@ -22,6 +22,7 @@
   }
   .mainContentSort_sortBy_list {
     display: flex;
+    flex-wrap: wrap;
   }
   .mainContentSort_sortBy_list_item {
     margin-right: 15px;
@@ -32,21 +33,33 @@
     text-decoration: underline;
   }
 }
-.mainContentSort_showCounter{
-border: 1px solid #DEDEDE;
-box-sizing: border-box;
-border-radius: 3px;
-width: 50px;
-height: 33.33px;
-margin-left: 10px;
+.mainContentSort_showCounter {
+  border: 1px solid #dedede;
+  box-sizing: border-box;
+  border-radius: 3px;
+  width: 50px;
+  height: 33.33px;
+  margin-left: 10px;
 }
-.mainContentSort_addItems_container{
+.mainContentSort_addItems_container {
   display: flex;
 }
-.mainContentSort_addItem{
+.mainContentSort_addItem {
   @extend %button_unchosen;
   width: 100px;
   height: 30px;
   margin-right: 10px;
   font-weight: normal;
+}
+@media (max-width: 500px) {
+  .mainContentSort_addItems_container {
+    width: 0px;
+    visibility: hidden;
+  }
+}
+@media (max-width: 370px) {
+  .mainContentSort_showCounter_container {
+    width: 0px;
+    visibility: hidden;
+  }
 }

@@ -54,3 +54,7 @@
   border-radius: 3px;
 }
 
+@media (max-width: 700px){
+  %container__inner{
+    padding: 0 10px;}
+}

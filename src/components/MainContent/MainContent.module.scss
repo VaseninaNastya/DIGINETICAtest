@@ -17,3 +17,10 @@
   width: 100%;
   margin-bottom: 40px;
 }
+@media (max-width: 950px) {
+  .cardProducts_list_row {
+    .cardProduct_container:last-of-type{
+      display: none;
+    }
+  }
+}

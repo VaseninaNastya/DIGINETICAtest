@@ -35,3 +35,12 @@
 .button__prime{
   margin-top: auto;
 }
+@media (max-width: 650px) {
+  .cardProduct_img{
+    height: 140px;
+    width: 140px;
+  }
+  .cardProduct_container{
+    height: 296px;
+    width: 140px;}
+}
