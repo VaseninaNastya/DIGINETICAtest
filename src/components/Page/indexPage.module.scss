@@ -1,4 +1,4 @@
-  
+@import "../extends.scss";
 *,
 *:before,
 *:after {
@@ -10,12 +10,8 @@
 
 body {
   margin: 0;
-  font-family:  'PT Sans', 'Open Sans',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-size: 21px;
-  line-height: 32px;
+  @extend %font-stack-Arial;
+  padding: 0 !important;
   background-color: white;
 }
 
@@ -34,7 +30,12 @@ cursor: pointer;
 li{
   list-style: none;
 }
-
+h1{
+font-size: 28px;
+line-height: 32px;
+letter-spacing: 0em;
+font-weight: normal;
+}
 .container{
     width: 1280px;
     margin: 0 auto;
@@ -45,24 +46,39 @@ li{
 }
 
 .button__prime{
-    width: 90%;
-    color: white;
-    background-color: #3c92bd;
-    height: 30px;
-    border-radius: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
+  @extend %font-stack-Roboto;
+  @extend %button;
+  font-weight: bold;
+    width: 100%;
+    background-color: #F1BD45;
   }
-  .button__prime:hover{
-    box-shadow: 0 0 10px rgba(0,0,0,0.2); /* Параметры тени */
+  .button__secondary{
+    @extend %font-stack-Roboto;
+    @extend %button;
+    font-weight: bold;
+      width: 117px;
+      border: 1px solid #DEDEDE;
+      background-color: inherit;
+      margin-left: 11px;
+    }
+  button:active, button:focus {
+    outline: none !important;
   }
-  .button__prime:active{
-    background-color: #30799e;
-    box-shadow: 0 0 20px rgba(0,0,0,0.2); /* Параметры тени */
+  button::-moz-focus-inner {
+    border: 0 !important;
   }
-  @media (max-width: 1201px){
-    .container{
-        width: 90%;}
+  button{
+    border: none;
   }
+
+.content_container{
+  @extend %container__inner
+}
+@media (max-width: 1279px){
+  .container{
+    width: 100%;}
+}
+@media (max-width: 700px){
+  .content_container{
+    padding: 0 10px;}
+}

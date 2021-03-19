@@ -3,7 +3,7 @@ const path = require("path");
 
 module.exports = {
   entry: {
-    indexPage: "./src/components/Page/indexPage.js",
+    indexPage: "./src/app.js",
   },
   module: {
     rules: [
@@ -11,7 +11,7 @@ module.exports = {
       //   test: /\.css$/, use: ['style-loader', 'css-loader']
       // },
       {
-        test: /\.s[ac]ss$/i,
+        test: /\.(s[ac]ss|css)$/i,
         use: [
           "style-loader",
           {

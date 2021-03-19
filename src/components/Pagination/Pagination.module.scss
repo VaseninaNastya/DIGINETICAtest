@@ -1,0 +1,18 @@
+
+.pagination_container{
+  font-size: 16px;
+  line-height: 18px;
+  width: 128px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2px;
+}
+.pagination_pages__prev, .pagination_pages__next{
+  opacity: 50%;
+}
+.pagination_pages__cur{
+  margin-left: 15px;
+}
+.pagination_pages__next{
+  margin-right: 15px;
+}

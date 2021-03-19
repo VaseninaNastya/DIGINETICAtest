@@ -1,0 +1,22 @@
+@import "../extends.scss";
+.aside_container {
+  width: 290px;
+  margin-top: 15px;
+}
+.categoryList {
+  margin-top: 15px;
+}
+.categoryList_item{
+  height: 30px;
+  color: #5375B7;
+  white-space: pre;
+}
+.categoryList_item_description{
+  color: #DEDEDE;
+  @extend %font-stack-Open_Sans__secondary;
+} 
+ @media (max-width: 1279px) {
+  .aside_container {
+    display: none;
+  }
+  }
