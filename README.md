@@ -13,3 +13,6 @@ yarn build
 ```
 
 to bundle your application
+
+
+deploy: https://epic-spence-5501d5.netlify.app/dist/
