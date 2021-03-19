@@ -1,0 +1,45 @@
+@import "../extends.scss";
+.brands_title_container{
+  font-weight: bold;
+  margin-bottom:6px ;
+  display: flex;
+  justify-content: space-between;
+}
+.brands_uncheck{
+  @extend %font-stack-Arial;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 11px;
+  text-decoration-line: underline;
+  color: #8b8b8b;
+  cursor: pointer;
+}
+.brands_container{
+  display: flex;
+  flex-direction: column;
+margin-top: 24px;
+input{
+  position: absolute;
+	z-index: -1;
+	opacity: 0;
+	display: block;
+	width: 0;
+	height: 0;
+}
+}
+.brands_item{
+  display: flex;
+  align-items: center;
+  height: 30px;
+  white-space: pre;
+  @extend %font-stack-Open_Sans
+}
+
+.brands_checkbox{
+  margin-right: 8px;
+  margin-left: 2px;
+}
+.brands_brandName{
+  color: #DEDEDE;
+  @extend %font-stack-Open_Sans__secondary;
+}

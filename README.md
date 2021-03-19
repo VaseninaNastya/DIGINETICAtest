@@ -13,3 +13,6 @@ yarn build
 ```
 
 to bundle your application
+
+
+deploy: https://festive-meninsky-5fe26b.netlify.app/

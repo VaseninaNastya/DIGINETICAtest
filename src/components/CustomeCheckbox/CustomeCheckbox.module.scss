@@ -1,0 +1,14 @@
+
+@import "../extends.scss";
+.checkbox_castome{
+  @extend %input;
+  height: 15px;
+  width: 15px;
+}
+.checkbox_castome__checked{
+  background-color: #dfdfdf;
+  background-image: url('./img/checked_icon.png');
+  background-position: 0px 0px;
+background-size: cover;
+  background-repeat: no-repeat;
+}

@@ -1,11 +1,11 @@
 {
   "name": "DIGINETICAtest",
   "version": "1.0.0",
-  "main": "app.js",
+  "main": "./src/app.js",
   "private": true,
   "scripts": {
     "build": "webpack",
-    "watch": "webpack -w"
+    "watch": "webpack --watch --progress"
   },
   "keywords": [],
   "author": "",
